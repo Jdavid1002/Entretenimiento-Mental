@@ -1,0 +1,22 @@
+.First-Banner{
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , #ffffff00), 
+    url(img/38085763_1841133182635842_8346753449211199488_o.jpg);
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Membresia{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
