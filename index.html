@@ -9,7 +9,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body >
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5" style="position: fixed; width: 100%;z-index: 1; " >
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5" style="position: fixed; width: 100%;z-index: 1;" >
         <a class="navbar-brand text-success " href="#">
         <img src="img/103824802_3073352226080592_3821953631284277249_n.jpg" alt="" style="width: 40px; border-radius: 100%; " >
         Entretenimiento Mental</a>
@@ -17,7 +18,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse mr-5 " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto " style="margin-left: auto;" >
             <li class="nav-item">
                 <a class="nav-link" href="#Home"> Inicio </a>
@@ -32,15 +33,16 @@
                 <a class="nav-link" href="#contactos"> Contáctenos </a>
               </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <a id="Carrito">
+            <i class="Carrito text-secondary mx-5 fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            <div class="CarritoContenido bg-dark" id="CarritoContenido" >
+            </div>
+          </a>
         </div>
       </nav>
 
     <div class="First-Banner" id="Home" >
-        <div class="ml-5" style="padding-top: 40%;"  > 
+        <div class="ml-5" style="margin-top: 40%;"  > 
             <h3 class="text-success" > Bienvenido a Entretenimiento Mental </h3>
             <p class="text-white" > ENTRETENIMIENTO MENTAL C.C Bulevar Niza Local 245 C.C Hacienda Santa Bárbara Local D-338 C.C Palatino Local 222 Bogota - Colombia </p>
         </div>
@@ -49,7 +51,7 @@
         </div>
     </div>
 
-    <div class="Info container pt-5 " id="Info" >
+    <div class="Info container  shadow p-3 my-5 bg-white rounded" id="Info" >
         <h2> Nuestro Objetivo </h2>
         <p>Diviértete aprendiendo mediante juegos didácticos, estos son la mejor manera de adquirir conocimiento 🤗
             Es importante desarrollar habilidades cognitivas desde temprana edad con la implementación de juguetes que estimulen todas las capacidades de la persona, juega, diviértete y aprende  🥰 </p>
@@ -57,79 +59,201 @@
         <p>Aprende y enseña de manera lúdica mediante juegos, de esta forma será más fácil adquirir el conocimiento, puedes practicar mediante juegos de memoria, concentración, agilidad mental o simplemente divertirte y mejorar tus habilidades motrices 🤗</p>
     </div>
 
-    <h2 class="container" id="Tienda" > ¡Bienvenido a nuestra tienda! </h2>
-    <p class="container"  > En esta tienda encontrarás algunos de todos nuestros productos, para verlos todos solo dale click en comprar a cualquiera de los siguientes productos y se te enviará a nuestra pagina de facebook </p>
-    <div class="Membresia container my-5">
+    <hr>
+      <div class="shadow p-3 mb-5 bg-white rounded container" >
+        <h2 class="container" id="Tienda" > ¡Bienvenido a nuestra tienda! </h2>
+        <p class="container"  > En esta tienda encontrarás algunos de todos nuestros productos, para verlos todos solo dale click en comprar a cualquiera de los siguientes productos y se te enviará a nuestra pagina de facebook </p>
+      </div>
+      <h2 class="text-center" > ¿Que quieres comprar?</h2>
+      <br>
+
+
+
+      <div class="OpcionesProductos container" >
+        <div class="LogicaMatematica shadow p-3 mb-5 bg-white rounded " id="LogicaMatematica">
+          <h3> ¡Logica Matematica! </h3>
+          <img src="img/undraw_detailed_analysis_xn7y.png" style="width: 100%;" alt="">
+          <p> ¡Desarrolla tu logica matematica con nuestros productos, dame click y podrás verlos!  </p>
+        </div>
+  
+        <div class="Rompecabezas shadow p-3 mb-5 bg-white rounded " id="Rompecabezas">
+          <h3>¡Rompecabezas! </h3>
+          <img src="img/undraw_solution_mindset_34bi.png" style="width: 100%;" alt="">
+          <p> Conoce todos nuestros productos de Rompecabezas grande diversion y grandes rompecabezas </p>
+        </div>
+  
+        <div class="Infantil shadow p-3 mb-5 bg-white rounded " id="Infantil">
+          <h3> ¡Contenido para niños! </h3>
+          <img src="img/undraw_children_4rtb.png" style="width: 100%;" alt="">
+          <p>¿Tienes hijos y quieres que jueguen y aprendan? ¡Esta es tu sección!</p>
+        </div>
+      </div>
+
+
+
+      
+      <div class="Logica container my-5" id="Logica">
         <div class="card">
-            <img src="img/116216150_3221396637942816_3181690912450193211_o.jpg" class="card-img-top" alt="...">
+            <img src="img/Logica/116216150_3221396637942816_3181690912450193211_o.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Dominó doble 6</h5>
               <p class="card-text"> ⚔️
                 Dominó elaborado en madera Teca ideal para que pases un rato agradable en familia o amigos 🤗.</p>
-              <a href="https://www.facebook.com/Entmental/?ref=page_internal" class="btn btn-success">Comprar</a>
+              <a href="" class="btn btn-success">Comprar</a>
             </div>
           </div>
           <div class="card" >
-            <img src="img/116573214_3215708798511600_3708774973018631031_o.jpg" class="card-img-top" alt="...">
+            <img src="img/Logica/116573214_3215708798511600_3708774973018631031_o.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">RANA TK🐸</h5>
               <p class="card-text">
                 Juego tradicional de la rana en versión fácil de cargar, elaborada en madera teca , que esperas para divertirte en la comodidad de tu hogar con nuestros juegos 🎲</p>
 
-              <a href="https://www.facebook.com/Entmental/?ref=page_internal" class="btn btn-success">Comprar</a>
+              <a href="" class="btn btn-success">Comprar</a>
             </div>
           </div>
           <div class="card" >
-            <img src="img/116433463_3210252605723886_8099162159295829186_o.jpg" class="card-img-top" alt="...">
+            <img src="img/Logica/116433463_3210252605723886_8099162159295829186_o.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> Rompecabezas multifiguras 🧩</h5>
               <p class="card-text">
                 Juego con múltiples figuras para armar, cuenta con piezas de diversos tamaños para que puedas estimular tu creatividad al máximo 🥰 @ Bogota D.C</p>
-              <a href="https://www.facebook.com/Entmental/?ref=page_internal" class="btn btn-success">Comprar</a>
+              <a href="" class="btn btn-success">Comprar</a>
             </div>
           </div>
           <div class="card" >
-            <img src="img/115879859_3192538360828644_5375575928091796963_o.jpg" class="card-img-top" alt="...">
+            <img src="img/Logica/115879859_3192538360828644_5375575928091796963_o.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Parques de 4 puestos en pino ⚔️🛡</h5>
               <p class="card-text"> 
                 Clásico juego de parques elaborado en madera de pino para 4 jugadores 💡 </p>
-              <a href="https://www.facebook.com/Entmental/?ref=page_internal" class="btn btn-success">Comprar</a>
+              <a href="" class="btn btn-success">Comprar</a>
             </div>
           </div>
           <div class="card" >
-            <img src="img/109967676_3179060258843121_6569730456989298620_o.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">RANA ENCAJAR 🐸</h5>
-              <p class="card-text"> 
-                Juego el cual se caracteriza por tener fichas con diferentes formas acorde a las columnas, el objetivo es que el niño encaje las piezas en la columna correcta mediante giros de las fichas 💡.</p>
-              <a href="https://www.facebook.com/Entmental/?ref=page_internal" class="btn btn-success">Comprar</a>
-            </div>
-          </div>
-          <div class="card" >
-            <img src="img/109722199_3179057925510021_7454975283819611572_o.jpg" class="card-img-top" alt="...">
+            <img src="img/Logica/109722199_3179057925510021_7454975283819611572_o.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Damas chinas pino  ✡️</h5>
               <p class="card-text">
                 Clásico juego de damas chinas elaborado en madera de pino🔥</p>
-              <a href="https://www.facebook.com/Entmental/?ref=page_internal" class="btn btn-success">Comprar</a>
+              <a href="" class="btn btn-success">Comprar</a>
             </div>
           </div>
       </div>
 
+      <div class="RompecabezasDiv container my-5" id="RompecabezaDiv">
+        <div class="card">
+            <img src="img/Rompecabezas/WhatsApp Image 2020-09-14 at 12.56.25 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rompecabezas de pines 🛠</h5>
+              <p class="card-text">
+                Rompecabezas con elevada dificultad para una persona 😱.</p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Rompecabezas/WhatsApp Image 2020-09-14 at 12.57.14 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Estructuras armables 3D 🕌</h5>
+              <p class="card-text">
+                Réplicas a escala de edificaciones reales, las cuales vienen en láminas que deberás despegar y unir piezas entre sí para formar la figura 💡</p>
+
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Rompecabezas/WhatsApp Image 2020-09-14 at 12.58.46 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Replica de la torre Eiffel, rompecabezas 3D</h5>
+              <p class="card-text">
+                Réplicas a escala de edificaciones reales, las cuales vienen en láminas que deberás despegar y unir piezas entre sí para formar la figura 💡
+              </p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Rompecabezas/WhatsApp Image 2020-09-14 at 12.59.23 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mini estructuras armables 3D 🕌 </h5>
+              <p class="card-text"> 
+                Réplicas a escala de edificaciones reales, las cuales vienen en láminas que deberás despegar y unir piezas entre sí para formar la figura 💡 </p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Rompecabezas/WhatsApp Image 2020-09-14 at 1.00.05 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Estructuras armables 🕌</h5>
+              <p class="card-text">
+                Rompecabezas a escala de edificaciones reales, tenemos estructuras y estadios de todos los tamaños 😱</p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="InfantilDiv container my-5" id="InfantilDiv">
+        <div class="card">
+            <img src="img/Infantil/109967676_3179060258843121_6569730456989298620_o.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">RANA ENCAJAR 🐸</h5>
+              <p class="card-text"> 
+                Juego el cual se caracteriza por tener fichas con diferentes formas acorde a las columnas, el objetivo es que el niño encaje las piezas en la columna correcta mediante giros de las fichas</p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Infantil/WhatsApp Image 2020-09-14 at 12.52.20 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Marimba Infantil🎼</h5>
+              <p class="card-text">
+                2 baquetas con un tablero el cual estimulará la creatividad en niños mediante sonidos 🥇🎲</p>
+
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Infantil/WhatsApp Image 2020-09-14 at 12.53.28 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Gimnacio infantil pequeño👶🏽</h5>
+              <p class="card-text">
+                Juguete para niños el cual permitirá la estimulación de la creatividad y concentración mediante anillos y figuras que pasan a través de un circuito 🧠🤗</p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Infantil/WhatsApp Image 2020-09-14 at 12.54.22 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tren infantil circo 🎪</h5>
+              <p class="card-text"> 
+                Tren elaborado en madera de pino con piezas desarmables las cuales puedes unir entre sí ⚙️ </p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="img/Infantil/WhatsApp Image 2020-09-14 at 12.55.06 PM.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gimnacio infantil con ruedas👶🏽</h5>
+              <p class="card-text">
+                Juguete para niños el cual permitirá la estimulación de la creatividad y concentración mediante anillos y figuras que pasan a través de un circuito 🧠🤗</p>
+              <a href="" class="btn btn-success">Comprar</a>
+            </div>
+          </div>
+      </div>
+
+
       <footer class="bg-dark " id="contactos" >
         <h4 class="text-center  text-white py-4 " > Contáctanos a nuestras redes sociales </h4>
         <div class="footer-img  d-flex justify-content-center " >
-          <a href="https://www.facebook.com/Entmental/?ref=page_internal">
+          <a href="https://www.facebook.com/Entretenimiento-Mental-102704844890844">
             <i class=" text-white  px-3 pb-4 fa fa-facebook-square" aria-hidden="true"></i>
           </a>
-          <a href="#">
+          <a href="">
             <i class=" text-white  px-3 pb-4 fa fa-twitter-square" aria-hidden="true"></i>
           </a>
           <a href="#">
             <i class=" text-white  px-3 pb-4 fa fa-whatsapp" aria-hidden="true"></i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/entretenimiento_mental_2.0/">
             <i class=" text-white  px-3 pb-4 fa fa-instagram" aria-hidden="true"></i>
           </a>
         </div>
